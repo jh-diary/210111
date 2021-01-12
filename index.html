@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>210110- css실습</title>
+    <style>
+    h1 {
+      color: green;
+      border-bottom: 1px black solid;
+      text-align: center;
+      border
+    }
+     a, strong{
+      border: 5px red solid;
+      padding: 30px;
+      margin: 50px;
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+    }
+    body{
+      text-align: left;
+    }
+    #grid{
+      border: 5px solid pink;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin:0px;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>제로에서 시작하기- 컴퓨터 코딩 6일</h1>
+    <p>
+      <br>오늘은 지금까지 배웠던 작업들을 실습을 통해서 3개의 웹페이지를 만들었고 박스모델까지 연습했습니다.
+      <br>오늘도 강의 정리 해봅시다
+    </p>
+    <p id="grid">
+      <br>topic 8. 박스 모델 써먹기
+      <br>박스모델을 잘 써먹으려면 태그가 가진 특성을 잘 이해하고(인라인인지 블록인지..등등) 이를 토대로 세심한 작업이 필요합니다
+      <br>inspect 기능을 활용하여 css작업에 필요한 padding,margin,border 등의 정보를 얻어 활용해야한다.
+      <br>padding,margin등의 기능 자유자재로 사용할 수 있도록 개념자체를 이해하는 것이 중요하다.
+      <br>어떤 태그의 어떤 부분을 이용할 건지도 중요하다. 예를 들어 나는 제목과 목차를 나누는 선이 필요하다고 하면 이 선을 어디에 둘건지 생각을 하고 이 선이 어떤 태그의 css로 들어가야할지 정한다.
+      <br>이 때 태그의 특성을 이해하여 진행한다. 어떤 태그는 문서 전체를 사용하지만 어떤 컨텐츠는 자기 컨텐츠의 크기만큼을 사용하기 때문이다.
+  </p>
+    <p id="grid">
+      <br>topic 9.
+      <br>div태그는 아무런 정보를 제공하지않는 디자인에 관한 태그이다.
+      <br>division이라는 뜻으로 나누는 태그이고 이 태그는 block level element이다.
+      <br>span태그는 div 태그와 같지만 inline element이다.
+      <br>*div와 span 둘 다 원하는 형태로 모두 변경시키기위해선 부모태그가 필요하다. 나란히 배치하고싶으면 부모태그가 필요하다는 것이다!
+      <br>그렇게하고 id선택자이던 class선택자이던 적용을 한다. 그리고 display: grid;를 쓰고 grid의 속성 중에서 정한 후 value값을 정한다.
+      <br>grid만 썼을 땐 아무 변화도 없다!
+      <br>value 정할 때 각각의 크기에 대한 값을 줘도 되지만 1fr이라는 단위를 사용하기도 한다.
+      <br>*fr단위는 비율에 대한 단위이다. 유연한 크기를 갖는 단위라는 것이다.
+  </p>
+    <a href="https://caniuse.com/" target="_blank">caniuse.com</a> 은 여러 css,html,js 현재 웹 브라우저들이 기술을 얼마나 채택하고있는지에 대한 데이터,통계를 제공하는 사이트이다.
+  </body>
+</html>
